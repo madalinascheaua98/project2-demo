@@ -4,16 +4,20 @@ import './ProductItem.css';
 import { connect } from 'react-redux';
 // Trebuie sa importam actiunile pe care le vom utiliza(dispatch-ui).
 import { addToCart } from '../redux/actions/cart';
+// Importam Link-ul din router.
+import { Link } from 'react-router-dom';
 
 function ProductItem(props) {
     // Trebuie sa extragem si id-ul pentru ca in reducerul ce aduaga in cart il folosim.
     const {name, price, currency, image, id} = props;
 
     return(
-        <div className="product-item col-4 d-flex flex-column align-items-center mb-3">
-            <img src={image} alt="productPhoto" className="mb-2"/>
-            <p className="mb-1 text-center">{ name }</p>
-            <p className="text-center">{ price +" "+ currency }</p>
+        <div className="product-item col-12 col-md-4 d-flex flex-column align-items-center mb-3">
+            <Link to={`/product/${id}`}>
+                <img src={image} alt="productPhoto" className="mb-2"/>
+                <p className="mb-1 text-center">{ name }</p>
+                <p className="text-center">{ price +" "+ currency }</p>
+            </Link>
             {/* Am adaugat un buton de adaugare in cart */}
             <button
                 className="btn btn-outline-dark"
@@ -31,7 +35,7 @@ function ProductItem(props) {
                     }
                 })}
             >
-                Adaugă în coș
+                Add to basket
             </button>
         </div>
     );

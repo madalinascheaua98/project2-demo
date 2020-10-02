@@ -21,6 +21,9 @@ const rootReducer = combineReducers({
 
 // Toate middleware-urile utilizate de redux pot fi puse intr-un vector.
 const middlewares = [thunk, logger];
+if (process.env.NODE_ENV === 'development') {
+    middlewares.push(logger);
+}
 // Pasam rootReducerul rezultat din combinarea reducerilor catre createStore. De asemenea, pasam
 // rezultatul apelarii lui applyMiddleware, cu CONTINUTUL vectorului de middleware-uri primit ca parametru.
 const store = createStore(rootReducer, applyMiddleware(...middlewares));

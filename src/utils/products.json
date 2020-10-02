@@ -1,236 +1,451 @@
 {
-    "shoes": {
+    "fantasy": {
         "items": [
             {
                 "id": 1,
-                "name": "Sneakerși piele Massimo Dutti",
-                "price": 135,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/Rz8lVQa.jpg",
-                "size": 45,
-                "colour": "Negru",
-                "material": "Piele",
-                "brand": "Massimo Dutti",
-                "description": "Sneakerși din piele cu talpă inițial albă, din colecția de toamnă-iarnă 2019, Massimo Dutti."
+                "name": "The Hobbit",
+                "price": 20,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/y0PWC78.jpg",
+                "author": "J.R.R. Tolkien",
+                "format": "Paperback",
+                "language": "English",
+                "description": "Written for J.R.R. Tolkien’s own children, The Hobbit met with instant critical acclaim when it was first published in 1937. Now recognized as a timeless classic, this introduction to the hobbit Bilbo Baggins, the wizard Gandalf, Gollum, and the spectacular world of Middle-earth recounts of the adventures of a reluctant hero, a powerful and dangerous ring, and the cruel dragon Smaug the Magnificent."
             },
             {
                 "id": 2,
-                "name": "Teniși negri Polo Ralph Lauren",
-                "price": 100,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/Og3Oh24.jpg",
-                "size": 45,
-                "colour": "Negru",
-                "material": "Pânză",
-                "brand": "Polo Ralph Lauren",
-                "description": "Teniși din pânză cu talpă inițial albă, din colecția de primăvară-vară 2019, Fashion Days."
+                "name": "The Fellowship of the Ring",
+                "price": 12,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/aHVnHTb.jpg",
+                "author": "J.R.R. Tolkien",
+                "format": "Paperback",
+                "language": "English",
+                "description": "One Ring to rule them all, One Ring to find them, One Ring to bring them all and in the darkeness bind them. In a sleepy village in the Shire, young Frodo Baggins finds himself faced with an immense task, as his elderly cousin Bilbo entrusts the Ring to his care. Frodo must leave his home and make a perilous journey across Middle-earth to the Cracks of Doom, there to destroy the Ring and foil the Dark Lord in his evil purpose."
             },
             {
                 "id": 3,
-                "name": "Ghete din piele maro Massimo",
-                "price": 185,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/zoqSu87.jpg",
-                "size": 45,
-                "colour": "Maro",
-                "material": "Piele",
-                "brand": "Massimo Dutti",
-                "description": "Ghete maro din piele, din colecția de toamnă-iarnă 2017, Massimo Dutti."
-            }
-        ],
-        "image": "https://i.imgur.com/X0qldXO.jpg",
-        "name": "Încălțăminte",
-        "description": "Ghete, pantofi, sneakerși: finețe garantată!"
-    },
-    "sweaters": {
-        "items": [
+                "name": "The Two Towers",
+                "price": 12,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/KPX0COF.jpg",
+                "author": "J.R.R. Tolkien",
+                "format": "Paperback",
+                "language": "English",
+                "description": "Frodo and his Companions of the Ring have been beset by danger during their quest to prevent the Ruling Ring from falling into the hands of the Dark Lord by destroying it in the Cracks of Doom. They have lost the wizard, Gandalf, in a battle in the Mines of Moria. And Boromir, seduced by the power of the Ring, tried to seize it by force. While Frodo and Sam made their escape, the rest of the company was attacked by Orcs. Now they continue the journey alone down the great River Anduin—alone, that is, save for the mysterious creeping figure that follows wherever they go."
+            },
             {
                 "id": 4,
-                "name": "Pulovăr finuț cu guler",
-                "price": 95,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/6afzuEr.jpg",
-                "size": "L",
-                "colour": "Maro",
-                "material": "Cașmir",
-                "brand": "DS Damat",
-                "description": "Pulovăr din cașmir, slim fit, colecția toamnă-iarnă 2019, DS Damat."
+                "name": "Eragon",
+                "price": 9.45,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/MaHeBdL.jpg",
+                "author": "Christopher Paolini",
+                "format": "Paperback",
+                "language": "English",
+                "description": "When fifteen-year-old Eragon finds a polished blue stone in the forest, he thinks it is the lucky discovery of a poor farm boy. But when the stone brings a dragon hatchling, Eragon soon realizes he has stumbled upon a legacy nearly as old as the Empire itself. Overnight his simple life is shattered, and, gifted with only an ancient sword, a loyal dragon, and sage advice from an old storyteller, Eragon is soon swept into a dangerous tapestry of magic, glory, and power. Now his choices could save - or destroy - the Empire."
             },
             {
                 "id": 5,
-                "name": "Pulovăr multicolor",
-                "price": 105,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/s0VytKc.jpg",
-                "size": "L",
-                "colour": "Multicolor",
-                "material": "Bumbac",
-                "brand": "McNeal",
-                "description": "Pulovăr multicolor, colecția toamnă-iarnă 209, McNeal."
+                "name": "Clash Of Kings",
+                "price": 26,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/pBczxNq.jpg",
+                "author": "George R.R. Martin",
+                "format": "Hardback",
+                "language": "English",
+                "description": "Here is the second volume in George R.R. Martin magnificent cycle of novels that includes A Game of Thrones and A Storm of Swords. As a whole, this series comprises a genuine masterpiece of modern fantasy, bringing together the best the genre has to offer. Magic, mystery, intrigue, romance, and adventure fill these pages and transport us to a world unlike any we have ever experienced. Already hailed as a classic, George R.R. Martin stunning series is destined to stand as one of the great achievements of imaginative fiction."
             },
             {
                 "id": 6,
-                "name": "Pulovăr călduros și frumos",
-                "price": 165,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/BWGgzlK.jpg",
-                "size": "L",
-                "colour": "Multicolor",
-                "material": "Lână",
-                "brand": "SELECTED",
-                "description": "Pulovăr din lână, în carouri, colecția toamnă-iarnă 2019, SELECTED."
-            },
-            {
-                "id": 7,
-                "name": "Pulovăr din lână",
-                "price": 160,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/dTcMbHT.jpg",
-                "size": "L",
-                "colour": "Crem",
-                "material": "Lână",
-                "brand": "Massimo Dutti",
-                "description": "Pulovăr din lână cu model, colecția toamnă-iarnă 2019, Massimo Dutti."
+                "name": "Tales of the Peculiar",
+                "price": 16.60,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/uyaxj8Y.jpg",
+                "author": "Ransom Riggs",
+                "format": "Hardback",
+                "language": "English",
+                "description": "Wealthy cannibals who dine on the discarded limbs of peculiars. A fork-tongued princess. The origins of the first ymbryne. These are but a few of the truly brilliant stories in Tales of the Peculiar—known to hide information about the peculiar world—first introduced by Ransom Riggs in his Miss Peregrine’s Peculiar Children series."
             }
         ],
-        "image": "https://i.imgur.com/SZU7liE.jpg",
-        "name": "Pulovere",
-        "description": "Pulovărașe elegănțele, slim, clasă superioară."
+        "image": "https://i.imgur.com/lDteMPB.jpg",
+        "name": "Fantasy",
+        "description": "Discover a world with magic, dragons and other mythical creatures waiting for you"
     },
-    "pants": {
+    "adventure": {
         "items": [
             {
+                "id": 7,
+                "name": "Hunger Games",
+                "price": 11.22,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/RDatEQ5.jpg",
+                "author": "Suzanne Collins",
+                "format": "Paperback",
+                "language": "English",
+                "description": "Sixteen-year-old Katniss Everdeen regards it as a death sentence when she steps forward to take her sister's place in the Games. But Katniss has been close to dead before—and survival, for her, is second nature. Without really meaning to, she becomes a contender. But if she is to win, she will have to start making choices that weight survival against humanity and life against love."
+            },
+            {
                 "id": 8,
-                "name": "Blugi bleumarin slim fit",
-                "price": 35,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/VhpATO8.jpg",
-                "size": "34",
-                "colour": "Bleumarin închis",
-                "material": "Blug",
-                "brand": "DS Damat",
-                "description": "Blugi bleumarin, slim fit, colecția primăvară-vară 2019, DS Damat."
+                "name": "Divergent",
+                "price": 15,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/lvytBz0.jpg",
+                "author": "Veronica Roth",
+                "format": "Hardback",
+                "language": "English",
+                "description": "In Beatrice Prior's dystopian Chicago world, society is divided into five factions, each dedicated to the cultivation of a particular virtue—Candor (the honest), Abnegation (the selfless), Dauntless (the brave), Amity (the peaceful), and Erudite (the intelligent). On an appointed day of every year, all sixteen-year-olds must select the faction to which they will devote the rest of their lives. For Beatrice, the decision is between staying with her family and being who she really is—she can't have both. So she makes a choice that surprises everyone, including herself."
             },
             {
                 "id": 9,
-                "name": "Blugi negri slim fit",
-                "price": 40,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/weiI07t.jpg",
-                "size": "34",
-                "colour": "Negru-gri",
-                "material": "Blug",
-                "brand": "DS Damat",
-                "description": "Blugi negri, slim fit, colecția toamnă-iarnă 2019, DS Damat."
-            }
-        ],
-        "image": "https://i.imgur.com/srQCDRN.jpg",
-        "name": "Pantaloni/blugi",
-        "description": "Jeanși și pantaloni pentru baieții care și-o ard patroni!"
-    },
-    "jackets": {
-        "items": [
+                "name": "The Maze Runner",
+                "price": 9.5,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/p6hLBwG.jpg",
+                "author": "James Dashner",
+                "format": "Paperback",
+                "language": "English",
+                "description": "When Thomas wakes up in the lift, the only thing he can remember is his name. He's surrounded by strangers - boys whose memories are also gone. Outside the towering stone walls that surround them is a limitless, ever-changing maze. It's the only way out--and no one's ever made it through alive. Then a girl arrives. The first girl ever. And the message she delivers is terrifying: Remember. Survive. Run."
+            },
             {
                 "id": 10,
-                "name": "Haină lungă din lână virgină",
-                "price": 210,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/IXrZitQ.jpg",
-                "size": "L",
-                "colour": "Gri închis",
-                "material": "Lână virgină",
-                "brand": "Peek and Cloppenburg",
-                "description": "Haină lungă din lână virgină, colecția toamnă-iarnă 2018, Peek and Cloppenburg."
+                "name": "Into the Wild",
+                "price": 7.8,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/TJDycgv.jpg",
+                "author": "Jon Krakauer",
+                "format": "Paperback",
+                "language": "English",
+                "description": "In April, 1992, a young man from a well-to-do family hitchhiked to Alaska and walked alone into the wilderness north of Mt. McKinley. His name was Christopher Johnson McCandless. He had given $25,000 in savings to charity, abandoned his car and most of his possessions, burned all the cash in his wallet, and invented a new life for himself. Four months later, a party of moose hunters found his decomposed body. How McCandless came to die is the unforgettable story of Into the Wild."
             },
             {
                 "id": 11,
-                "name": "Geacă bleumarin cu glugă detașabilă",
-                "price": 250,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/eCZd7PU.jpg",
-                "size": "L",
-                "colour": "Bleumarin",
-                "material": "Poliester",
-                "brand": "DS Damat",
-                "description": "Geacă bleumarin cu glugă detașabilă, colecția toamnă-iarnă 2019, DS Damat."
-            }
-        ],
-        "image": "https://i.imgur.com/81I6Oab.jpg",
-        "name": "Geci/Haine",
-        "description": "Confortabile, călduroase și nu arăți ca un cartof!"
-    },
-    "tshirts": {
-        "items": [
+                "name": "Life of Pi",
+                "price": 6,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/5WCTZ7m.jpg",
+                "author": "Yann Martel",
+                "format": "Paperback",
+                "language": "English",
+                "description": "Life of Pi is a fantasy adventure novel by Yann Martel published in 2001. The protagonist, Piscine Molitor 'Pi' Patel, a Tamil boy from Pondicherry, explores issues of spirituality and practicality from an early age. He survives 227 days after a shipwreck while stranded on a boat in the Pacific Ocean with a Bengal tiger named Richard Parker. "
+            },
             {
                 "id": 12,
-                "name": "Tricou în dungi",
-                "price": 90,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/BWvzCwB.jpg",
-                "size": "L",
-                "colour": "Multicolor",
-                "material": "Bumbac",
-                "brand": "Lacoste",
-                "description": "Tricou în dungi, colecția primăvară-vară 2019, Lacoste."
+                "name": "Jurassic Park",
+                "price": 8.9,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/8FiQm6H.jpg",
+                "author": "Michael Crichton",
+                "format": "Paperback",
+                "language": "English",
+                "description": "An astonishing technique for recovering and cloning dinosaur DNA has been discovered. Now humankind's most thrilling fantasies have come true. Creatures extinct for eons roam Jurassic Park with their awesome presence and profound mystery, and all the world can visit them--for a price. Until something goes wrong. . . ."
             },
             {
                 "id": 13,
-                "name": "Tricou de ping pong",
-                "price": 110,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/4BbF4TO.jpg",
-                "size": "L",
-                "colour": "Roșu",
-                "material": "Poliester",
-                "brand": "Li Ning",
-                "description": "Tricou de ping pong cu imprimeu cu dragon, purtat de jucatorii naționalei chinei în 2013."
-            },
-            {
-                "id": 14,
-                "name": "Tricou original BVB cu autograf",
-                "price": 1909,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/etIsbHV.jpg",
-                "size": "L",
-                "colour": "Galben-Negru",
-                "material": "Poliester",
-                "brand": "Puma",
-                "description": "Tricoul purtat de Borussia Dortmund în sezonul competițional 2018-2019, cu numarul 7 și numele 'SANCHO'. Tricoul este semnat de portarul Borussiei, Roman Burki."
+                "name": "City of Bones",
+                "price": 17.8,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/RC4D7ix.jpg",
+                "author": "Cassandra Clare",
+                "format": "Hardback",
+                "language": "English",
+                "description": "This is Clary's first meeting with the Shadowhunters, warriors dedicated to ridding the earth of demons. It's also her first encounter with Jace, a Shadowhunter who looks a little like an angel and acts a lot like a jerk. Within twenty-four hours Clary is pulled into Jace's world with a vengeance when her mother disappears and Clary herself is attacked by a demon. But why would demons be interested in ordinary mundanes like Clary and her mother? And how did Clary suddenly get the Sight? The Shadowhunters would like to know..."
             }
         ],
-        "image": "https://i.imgur.com/l27WtFL.jpg",
-        "name": "Tricouri",
-        "description": "Și de băiețeală și de sport."
+        "image": "https://i.imgur.com/u74TLKO.jpg",
+        "name": "Adventure",
+        "description": "Prepare for some epic journeys with challenges that will keep you on the edge of your seat"
     },
-    "accesories": {
+    "mystery": {
         "items": [
             {
+                "id": 14,
+                "name": "Gone Girl",
+                "price": 9.9,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/U2fNdCR.jpg",
+                "author": "Gillian Flynn",
+                "format": "Paperback",
+                "language": "English",
+                "description": "On a warm summer morning in North Carthage, Missouri, it is Nick and Amy Dunne’s fifth wedding anniversary. Presents are being wrapped and reservations are being made when Nick’s clever and beautiful wife disappears from their rented McMansion on the Mississippi River. Husband-of-the-Year Nick isn’t doing himself any favors with cringe-worthy daydreams about the slope and shape of his wife’s head, but passages from Amy's diary reveal the alpha-girl perfectionist could have put anyone dangerously on edge. Under mounting pressure from the police and the media—as well as Amy’s fiercely doting parents—the town golden boy parades an endless series of lies, deceits, and inappropriate behavior. Nick is oddly evasive, and he’s definitely bitter—but is he really a killer?"
+            },
+            {
                 "id": 15,
-                "name": "Fular TJ cu două fețe",
-                "price": 85,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/rSVUiLO.jpg",
-                "size": "Universal",
-                "colour": "Gri-Bleumarin",
-                "material": "Cașmir",
-                "brand": "Trussardi Jeans",
-                "description": "Fular cu imprimeu, din colecția toamnă-iarnă 2018, Trussardi Jeans."
+                "name": "Into the Water",
+                "price": 9.5,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/9eQfQXl.jpg",
+                "author": "Paula Hawkins",
+                "format": "Paperback",
+                "language": "English",
+                "description": "A single mother turns up dead at the bottom of the river that runs through town. Earlier in the summer, a vulnerable teenage girl met the same fate. They are not the first women lost to these dark waters, but their deaths disturb the river and its history, dredging up secrets long submerged. Left behind is a lonely fifteen-year-old girl. Parentless and friendless, she now finds herself in the care of her mother's sister, a fearful stranger who has been dragged back to the place she deliberately ran from—a place to which she vowed she'd never return."
             },
             {
                 "id": 16,
-                "name": "Mănuși din piele",
-                "price": 60,
-                "currency": "LEI",
-                "image": "https://i.imgur.com/LbjGaZ1.jpg",
-                "size": "L",
-                "colour": "Negru",
-                "material": "Piele",
-                "brand": "DS Damat",
-                "description": "Mănuși din piele, cu model, din colecția toamnă-iarnă 2018, DS Damat."
+                "name": "The Girl on the Train",
+                "price": 9,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/H0Xgwgr.jpg",
+                "author": "Paula Hawkins",
+                "format": "Paperback",
+                "language": "English",
+                "description": "Rachel catches the same commuter train every morning. She knows it will wait at the same signal each time, overlooking a row of back gardens. She's even started to feel like she knows the people who live in one of the houses. 'Jess and Jason', she calls them. Their life - as she sees it - is perfect. If only Rachel could be that happy. And then she sees something shocking. It's only a minute until the train moves on, but it's enough. Now everything's changed. Now Rachel has a chance to become a part of the lives she's only watched from afar. Now they'll see, she's much more than just the girl on the train..."
+            },
+            {
+                "id": 17,
+                "name": "The Murder of Roger Ackroyd",
+                "price": 8.2,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/KeA8psI.jpg",
+                "author": "Agatha Christie",
+                "format": "Paperback",
+                "language": "English",
+                "description": "The peaceful English village of King’s Abbot is stunned. First, the attractive widow Ferrars dies from an overdose of veronal. Not twenty-four hours later, Roger Ackroyd—the man she had planned to marry—is murdered. It is a baffling, complex case involving blackmail, suicide, and violent death, a cast that taxes Hercule Poirot’s “little grey cells” before he reaches one of the most startling conclusions of his fabled career."
+            },
+            {
+                "id": 18,
+                "name": "The Hound of the Baskervilles",
+                "price": 6.5,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/q4Tz8da.jpg",
+                "author": "Arthur Conan Doyle",
+                "format": "Paperback",
+                "language": "English",
+                "description": "The terrible spectacle of the beast, the fog of the moor, the discovery of a body: this classic horror story pits detective against dog, rationalism against the supernatural, good against evil. When Sir Charles Baskerville is found dead on the wild Devon moorland with the footprints of a giant hound nearby, the blame is placed on a family curse. It is left to Sherlock Holmes and Doctor Watson to solve the mystery of the legend of the phantom hound before Sir Charles' heir comes to an equally gruesome end. The Hound of the Baskervilles gripped readers when it was first serialised and has continued to hold its place in the popular imagination."
+            },
+            {
+                "id": 19,
+                "name": "The Lost Symbol",
+                "price": 10,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/omESPK5.jpg",
+                "author": "Dan Brown",
+                "format": "Paperback",
+                "language": "English",
+                "description": "When Langdon's beloved mentor, Peter Solomon - a prominent Mason and philanthropist - is brutally kidnapped, Langdon realizes his only hope of saving Peter is to accept this mystical invitation and follow wherever it leads him. Langdon is instantly into a clandestine world of Masonic secrets, hidden history, and never-before-seen locations - all of which seem to be dragging him toward a single, inconceivable truth."
             }
         ],
-        "image": "https://i.imgur.com/qw3wDj8.jpg",
-        "name": "Accesorii",
-        "description": "Fulare, căciuli, mănuși: nu mai sta pe gânduri, cumpără-le acuși!"
+        "image": "https://i.imgur.com/T79XTP7.jpg",
+        "name": "Mystery",
+        "description": "Try to solve these enigmas that involves murders, disappearancess and well-kept secrets"
+    },
+    "romance": {
+        "items": [
+            {
+                "id": 20,
+                "name": "Just One Day",
+                "price": 9.6,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/81tFbgR.jpg",
+                "author": "Gayle Forman",
+                "format": "Paperback",
+                "language": "English",
+                "description": "When sheltered American good girl Allyson 'LuLu' Healey first meets laid-back Dutch actor Willem De Ruiter at an underground performance of Twelfth Night in England, there's an undeniable spark. After just one day together, that spark bursts into a flame, or so it seems to Allyson, until the following morning, when she wakes up after a whirlwind day in Paris to discover that Willem has left. Over the next year, Allyson embarks on a journey to come to terms with the narrow confines of her life, and through Shakespeare, travel, and a quest for her almost-true-love, to break free of those confines."
+            },
+            {
+                "id": 21,
+                "name": "Confess",
+                "price": 10.5,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/bT59d8K.jpg",
+                "author": "Colleen Hoover",
+                "format": "Paperback",
+                "language": "English",
+                "description": "Auburn Reed is determined to rebuild her shattered life and she has no room for mistakes. But when she walks into a Dallas art studio in search of a job, she doesn’t expect to become deeply attracted to the studio’s enigmatic artist, Owen Gentry. For once, Auburn takes a chance and puts her heart in control, only to discover that Owen is hiding a huge secret. The magnitude of his past threatens to destroy everything Auburn loves most, and the only way to get her life back on track is to cut Owen out of it—but can she do it?"
+            },
+            {
+                "id": 22,
+                "name": "The Sun is also a Star",
+                "price": 18.4,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/JQrRfWO.jpg",
+                "author": "Nicola Yoon",
+                "format": "Hardback",
+                "language": "English",
+                "description": "Natasha: I’m a girl who believes in science and facts. Not fate. Not destiny. I’m definitely not the kind of girl who meets a cute boy on a crowded New York City street and falls in love with him. Not when my family is twelve hours away from being deported to Jamaica. Falling in love with him won’t be my story. Daniel: I’ve always been the good son, the good student, living up to my parents’ high expectations. Never the poet. Or the dreamer. But when I see her, I forget about all that. Something about Natasha makes me think that fate has something much more extraordinary in store—for both of us. The Universe: Every moment in our lives has brought us to this single moment. A million futures lie before us. Which one will come true?"
+            },
+            {
+                "id": 23,
+                "name": "Attachments",
+                "price": 7.6,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/d3hwQnK.jpg",
+                "author": "Rainbow Rowell",
+                "format": "Paperback",
+                "language": "English",
+                "description": "A heartwarming and hilarious romantic debut about falling in love from afar. It's 1999 and for the staff of one newspaper office, the internet is still a novelty. By day, two young women, Beth and Jennifer, spend their hours emailing each other, discussing in hilarious detail every aspect of their lives, from love troubles to family dramas. And by night, Lincoln, a shy, lonely IT guy spends his hours reading every exchange."
+            },
+            {
+                "id": 24,
+                "name": "Everything, Everything",
+                "price": 8.7,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/jJ1vyrj.jpg",
+                "author": "Nicola Yoon",
+                "format": "Paperback",
+                "language": "English",
+                "description": "Maddy is allergic to the world; stepping outside the sterile sanctuary of her home could kill her. But then Olly moves in next door. And just like that, Maddy realizes there's more to life than just being alive. You only get one chance at first love. And Maddy is ready to risk everything, everything to see where it leads."
+            },
+            {
+                "id": 25,
+                "name": "November 9",
+                "price": 9.8,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/XTD07P3.jpg",
+                "author": "Colleen Hoover",
+                "format": "Paperback",
+                "language": "English",
+                "description": "Fallon meets Ben, an aspiring novelist, the day before her scheduled cross-country move. Their untimely attraction leads them to spend Fallon’s last day in L.A. together, and her eventful life becomes the creative inspiration Ben has always sought for his novel. Over time and amidst the various relationships and tribulations of their own separate lives, they continue to meet on the same date every year. Until one day Fallon becomes unsure if Ben has been telling her the truth or fabricating a perfect reality for the sake of the ultimate plot twist."
+            }
+        ],
+        "image": "https://i.imgur.com/uWI18Si.jpg",
+        "name": "Romance",
+        "description": "Warm up your heart with these stories that are ready to take you on an emotional journey"
+    },
+    "classical": {
+        "items": [
+            {
+                "id": 26,
+                "name": "Jane Eyre",
+                "price": 7.9,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/QW2sR1C.jpg",
+                "author": "Charlotte Bronte",
+                "format": "Paperback",
+                "language": "English",
+                "description": "A novel of intense emotional power, heightened atmosphere and fierce intelligence, Jane Eyre dazzled and shocked readers with its passionate depiction of a woman's search for equality and freedom on her own terms. Its heroine Jane endures loneliness and cruelty in the home of her heartless aunt and the cold charity of Lowood School. Her natural independence and spirit prove necessary when she takes a position as governess at Thornfield Hall. But when she finds love with her sardonic employer, Rochester, the discovery of a shameful secret forces her to make a terrible choice."
+            },
+            {
+                "id": 27,
+                "name": "Wuthering Heights",
+                "price": 5,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/u6YU2Pf.jpg",
+                "author": "Emily Bronte",
+                "format": "Paperback",
+                "language": "English",
+                "description": "Wuthering Heights is a wild, passionate story of the intense and almost demonic love between Catherine Earnshaw and Heathcliff, a foundling adopted by Catherine's father. After Mr Earnshaw's death, Heathcliff is bullied and humiliated by Catherine's brother Hindley and wrongly believing that his love for Catherine is not reciprocated, leaves Wuthering Heights, only to return years later as a wealthy and polished man. He proceeds to exact a terrible revenge for his former miseries."
+            },
+            {
+                "id": 28,
+                "name": "Far From the Madding Crowd",
+                "price": 6,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/dYuCXXG.jpg",
+                "author": "Thomas Hardy",
+                "format": "Paperback",
+                "language": "English",
+                "description": "Independent and spirited Bathsheba Everdene has come to Weatherbury to take up her position as a farmer on the largest estate in the area. Her bold presence draws three very different suitors: the gentleman-farmer Boldwood, soldier-seducer Sergeant Troy and the devoted shepherd Gabriel Oak. Each, in contrasting ways, unsettles her decisions and complicates her life, and tragedy ensues, threatening the stability of the whole community. The first of his works set in the fictional county of Wessex, Hardy's novel of swift passion and slow courtship is imbued with his evocative descriptions of rural life and landscapes, and with unflinching honesty about sexual relationships."
+            },
+            {
+                "id": 29,
+                "name": "1984",
+                "price": 8,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/BDmlh9q.jpg",
+                "author": "George Orwell",
+                "format": "Paperback",
+                "language": "English",
+                "description": "Among the seminal texts of the 20th century, Nineteen Eighty-Four is a rare work that grows more haunting as its futuristic purgatory becomes more real. Published in 1949, the book offers political satirist George Orwell's nightmarish vision of a totalitarian, bureaucratic world and one poor stiff's attempt to find individuality. The brilliance of the novel is Orwell's prescience of modern life—the ubiquity of television, the distortion of the language—and his ability to construct such a thorough version of hell. Required reading for students since it was published, it ranks among the most terrifying novels ever written."
+            },
+            {
+                "id": 30,
+                "name": "Pride and Prejudice",
+                "price": 3.8,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/I6HMbvh.jpg",
+                "author": "Jane Austen",
+                "format": "Paperback",
+                "language": "English",
+                "description": "Since its immediate success in 1813, Pride and Prejudice has remained one of the most popular novels in the English language. Jane Austen called this brilliant work 'her own darling child' and its vivacious heroine, Elizabeth Bennet, 'as delightful a creature as ever appeared in print.' The romantic clash between the opinionated Elizabeth and her proud beau, Mr. Darcy, is a splendid performance of civilized sparring. And Jane Austen's radiant wit sparkles as her characters dance a delicate quadrille of flirtation and intrigue, making this book the most superb comedy of manners of Regency England."
+            },
+            {
+                "id": 31,
+                "name": "To Kill a Mockingbird",
+                "price": 9.5,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/KO3UW9Z.jpg",
+                "author": "Harper Lee",
+                "format": "Paperback",
+                "language": "English",
+                "description": "A lawyer's advice to his children as he defends the real mockingbird of Harper Lee's classic novel - a black man falsely charged with the rape of a white girl. Through the young eyes of Scout and Jem Finch, Harper Lee explores with exuberant humour the irrationality of adult attitudes to race and class in the Deep South of the 1930s. The conscience of a town steeped in prejudice, violence and hypocrisy is pricked by the stamina of one man's struggle for justice. But the weight of history will only tolerate so much."
+            }
+        ],
+        "image": "https://i.imgur.com/tr8Vh4D.jpg",
+        "name": "Classical Fiction",
+        "description": "Travel back in time with these stories with emotional messages relevant to this day"
+    },
+    "historical": {
+        "items": [
+            {
+                "id": 32,
+                "name": "Salt to the Sea",
+                "price": 15.6,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/hT40ZGs.jpg",
+                "author": "Ruta Sepetys",
+                "format": "Hardback",
+                "language": "English",
+                "description": "While the Titanic and Lusitania are both well-documented disasters, the single greatest tragedy in maritime history is the little-known January 30, 1945 sinking in the Baltic Sea by a Soviet submarine of the Wilhelm Gustloff, a German cruise liner that was supposed to ferry wartime personnel and refugees to safety from the advancing Red Army. The ship was overcrowded with more than 10,500 passengers — the intended capacity was approximately 1,800 — and more than 9,000 people, including 5,000 children, lost their lives."
+            },
+            {
+                "id": 33,
+                "name": "Orphan Train",
+                "price": 8.9,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/OmJnXxr.jpg",
+                "author": "Christina Baker Kline",
+                "format": "Paperback",
+                "language": "English",
+                "description": "Orphan Train tells the story of the unlikely friendship between Molly Ayers, a foster-kid hoping to avoid juvie, and Vivian Daly, the elderly woman she has been assigned to help. Shared experience serves to unite them as it comes to light that the aged Vivian spent time on 'orphan trains', which ran regularly from the cities of the East Coast to the farmlands of the Midwest from 1854 to 1929, carrying thousands of abandoned children whose fates would be determined by pure luck. The subject matter will grab students' attention because so few people know about this particularly heartbreaking piece of American history and the novel's message of resilience and unlikely bonds will carry them through."
+            },
+            {
+                "id": 34,
+                "name": "All the Light We Cannot See",
+                "price": 9.95,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/vhWsKlp.jpg",
+                "author": "Anthony Doerr",
+                "format": "Paperback",
+                "language": "English",
+                "description": "For Marie-Laure, blind since the age of six, the world is full of mazes. The miniature of a Paris neighbourhood, made by her father to teach her the way home. The microscopic layers within the invaluable diamond that her father guards in the Museum of Natural History. The walled city by the sea, where father and daughter take refuge when the Nazis invade Paris. And a future which draws her ever closer to Werner, a German orphan, destined to labour in the mines until a broken radio fills his life with possibility and brings him to the notice of the Hitler Youth."
+            },
+            {
+                "id": 35,
+                "name": "The Book Thief",
+                "price": 11.36,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/Uwe0426.jpg",
+                "author": "Markus Zusak ",
+                "format": "Paperback",
+                "language": "English",
+                "description": "1939. Nazi Germany. The country is holding its breath. Death has never been busier. Liesel, a nine-year-old girl, is living with a foster family on Himmel Street. Her parents have been taken away to a concentration camp. Liesel steals books. This is her story and the story of the inhabitants of her street when the bombs begin to fall."
+            },
+            {
+                "id": 36,
+                "name": "Between Shades of Gray",
+                "price": 8.4,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/H4EwNFU.jpg",
+                "author": "Ruta Sepetys",
+                "format": "Paperback",
+                "language": "English",
+                "description": "Lina is just like any other fifteen-year-old Lithuanian girl in 1941. She paints, she draws, she gets crushes on boys. Until one night when Soviet officers barge into her home, tearing her family from the comfortable life they've known. Separated from her father, forced onto a crowded and dirty train car, Lina, her mother, and her young brother slowly make their way north, crossing the Arctic Circle, to a work camp in the coldest reaches of Siberia. Here they are forced, under Stalin's orders, to dig for beets and fight for their lives under the cruelest of conditions."
+            },
+            {
+                "id": 37,
+                "name": "The Tattooist of Auschwitz",
+                "price": 7.6,
+                "currency": "EUR",
+                "image": "https://i.imgur.com/6542mzn.jpg",
+                "author": "Heather Morris",
+                "format": "Paperback",
+                "language": "English",
+                "description": "I tattooed a number on her arm. She tattooed her name on my heart. In 1942, Lale Sokolov arrived in Auschwitz-Birkenau. He was given the job of tattooing the prisoners marked for survival - scratching numbers into his fellow victims' arms in indelible ink to create what would become one of the most potent symbols of the Holocaust. Waiting in line to be tattooed, terrified and shaking, was a young girl. For Lale - a dandy, a jack-the-lad, a bit of a chancer - it was love at first sight. And he was determined not only to survive himself, but to ensure this woman, Gita, did, too. So begins one of the most life-affirming, courageous, unforgettable and human stories of the Holocaust: the love story of the tattooist of Auschwitz."
+            }
+        ],
+        "image": "https://i.imgur.com/HIHj5Aa.jpg",
+        "name": "Historical fiction",
+        "description": "Get inspired by these powerful stories written after the most terrible times and tragedies"
     }
 }

@@ -15,19 +15,19 @@ function Header(props) {
         <header className="border-bottom mb-3">
             <div className="container-fluid container-min-max-width d-flex justify-content-between align-items-center">
                 <Link to="/" className="my-3">
-                    <img src={Logo} alt="Sirluggia Shop" className="logo"/>
+                    <img src={Logo} alt="Mad Shop" className="logo"/>
                 </Link>
                 <div>
                     {/* Atentie! Userul este preluat din store, deci il vom referi ca props.user. */}
                     { props.user
-                        ? <p>Salut, {props.user.displayName}!</p>
+                        ? <p>Hello, {props.user.displayName}!</p>
                         : null
                     }
                     <div className="d-flex justify-content-end">
                         { props.user
                             // La click pe "Delogare", se apeleaza metoda signOut, venita prin mapDispatcToProps.
-                            ? <p className="logout h5" onClick={() => props.signOut()}>Delogare</p>
-                            : <Link to="/login" className="h5 mb-0">Logare</Link>
+                            ? <p className="logout h5" onClick={() => props.signOut()}>Log out</p>
+                            : <Link to="/login" className="h5 mb-0">Login</Link>
                         }
                         <div className="d-flex align-items-center">
                             <Link to="/cart" className="d-flex">

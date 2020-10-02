@@ -2,10 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/images/logo.png';
 import { ReactComponent as Google } from '../assets/icons/google.svg';
-import './Login.css'
+import { ReactComponent as Facebook } from '../assets/icons/facebook.svg';
+import './Login.css';
 import { connect } from 'react-redux';
 // Importam actiunea loginUser, care se va ocupa le loginul userului(request asincron)
-import { loginUser } from '../redux/actions/user';
+import { loginUserGoogle, loginUserFacebook } from '../redux/actions/user';
+
 
 class Login extends React.Component {
 
@@ -26,17 +28,25 @@ class Login extends React.Component {
                 </Link>
 
                 <h1 className="h2">Login</h1>
-                <p>Alege providerul cu care vrei să vrei să te loghezi:</p>
+                <p>Choose your provider:</p>
 
-                <button
-                    className="btn btn-outline-dark d-flex align-items-center"
-                    // La click pe butonul de login se apeleaza metoda signInWithGoogle, venita
-                    // prin mapDispatchToProps.
-                    onClick={() => this.props.signInWithGoogle()}
-                >
-                    <Google className="w-50 mr-3"/>
-                    <span className="text-nowrap">Loghează-te cu Google</span>
-                </button>
+                <div className="btn-group-vertical">
+                    <button
+                        className="btn btn-outline-dark d-flex align-items-center"
+                        onClick={() => this.props.signInWithGoogle()}
+                    >
+                        <Google className="w-50 mr-3"/>
+                        <span className="text-nowrap"> Login with Google </span>
+                    </button>
+            
+                    <button
+                        className="btn btn-outline-dark d-flex align-items-center"
+                        onClick={() => this.props.signInWithFacebook()}
+                    >
+                        <Facebook className="w-50 mr-3"/>
+                        <span className="text-nowrap">Login with Facebook</span>
+                    </button>
+                </div>
             </div>
         );
     }
@@ -59,7 +69,8 @@ const mapStateToProps = (state) => {
 // loginUser catre store.
 const mapDispatchToProps = (dispatch) => {
     return {
-        signInWithGoogle: () => dispatch(loginUser())
+        signInWithGoogle: () => dispatch(loginUserGoogle()),
+        signInWithFacebook:  () => dispatch(loginUserFacebook())
     }
 }
 

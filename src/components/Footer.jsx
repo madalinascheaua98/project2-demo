@@ -1,68 +1,54 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// Importam SVG-urile(iconitele).
 import { ReactComponent as Phone } from '../assets/icons/phone.svg';
 import { ReactComponent as Mail } from '../assets/icons/mail.svg';
 import { ReactComponent as GitHub } from '../assets/icons/github.svg';
 import { ReactComponent as LinkedIn } from '../assets/icons/linkedin.svg';
-// Importam CSS-ul
+import { ReactComponent as Book} from '../assets/icons/book.svg';
+import { ReactComponent as Books } from '../assets/icons/books.svg';
+// Importam CSS.
 import './Footer.css';
 
 function Footer() {
     return(
-        // Vrem ca intreg footer-ul sa aiba un fundal diferit la culoare.
-        // Footer-ul are 3 coloane si un copyright separat.
-        <footer className="pt-3 bg-light">
-            {/* Vrem ca ce contine footer-ul pe primul rand sa fie centrat si sa nu depaseasca
-            dimensiunile minimime si maxime, de aceea avem clasele container-fluid si container-min-max. */}
-            {/* Avand un singur rand, nu este necesar sa folosim grid-ul Bootstrap, flex isi
-            face treaba foarte usor. Doar trebuie sa dam display:flex si sa aliniem
-            elementele pe orizontala cu justify-content: space-between. */}
-            <div className="container-fluid container-min-max-width
-                            d-flex justify-content-between">
-                {/* Coloana 1: link-uri interne utile */}
-                <div>
-                    <h3 className="h5">Link-uri rapide:</h3>
-                    <p className="mb-1">
-                        <Link to='/about'>Despre</Link>
-                    </p>
-                    <p className="m-0">
-                        <Link to='/terms-and-conditions'>Termeni și condiții</Link>
-                    </p>
+        // Am mai adaugat clase(footer-group) pentru stilizares pe mobile!
+        <footer className="pt-3 mt-3 bg-light">
+            <div className="container-fluid container-min-max-width d-flex justify-content-between">
+                <div className="footer-group d-flex flex-column">
+                    <h3 className="h5">Learn more:</h3>
+                    <Link to='/about' className="text-dark">
+                         <Book/> About
+                        </Link>
+                    <Link to='/blind' className="text-dark"><Books/> Blind Date with a Book</Link>
                 </div>
-                {/* Coloana 2: telefon+mail */}
-                <div>
-                    <h3 className="h5">Contactează-mă:</h3>
-                    <p className="mb-1">
-                        {/* Putem la click sa intram direct in aplicatia de mail, specificand adresa de mail catre
-                        care scriem, dupa "mailto:". */}
-                        <a href="mailto:razvan.cirlugea@gmail.com">
+                <div className="footer-group">
+                    <h3 className="h5">Contact me:</h3>
+                    <p className="m-0">
+                        <a href="mailto:madalina.scheaua@gmail.com" className="text-dark">
                             <Mail className="mr-1 mb-1 footer-icon"/>
-                            razvan.cirlugea@gmail.com
+                            madalina.scheaua@gmail.com
                         </a>
                     </p>
-                    <p className="m-0"><Phone className="mr-1 footer-icon"/>+40728998166</p>
+                    <p className="m-0"><Phone className="mr-1 footer-icon"/>+40732224011</p>
                 </div>
-                {/* Coloana 3: link-uri externe. */}
-                <div>
-                    <h3 className="h5">Contactează-mă:</h3>
-                    <p className="mb-1">
-                        <a href="https://github.com/razvancir96">
+                <div className="footer-group">
+                    <h3 className="h5">Check out:</h3>
+                    <p className="m-0">
+                        <a href="https://github.com/madalinascheaua98" className="text-dark">
                             <GitHub className="mr-1 mb-1 footer-icon"/>
-                            razvancir96
+                            madalinascheaua98
                         </a>
                     </p>
                     <p className="m-0">
-                        <a href="https://www.linkedin.com/in/razvancirlugea/">
+                        <a href="https://www.linkedin.com/in/m%C4%83d%C4%83lina-%C8%99cheaua-0476591a3/" className="text-dark">
                             <LinkedIn className="mr-1 footer-icon"/>
-                            razvancirlugea
+                            madalinascheaua
                         </a>
                     </p>
                 </div>
             </div>
-            {/* Pentru cel de-al doilea rand din footer, nu trebuie decat sa centram textul. */}
             <div className="text-center py-3">
-                &copy; Răzvan Cîrlugea, 2019
+                &copy; Mad's Shelf, 2020
             </div>
         </footer>
     );

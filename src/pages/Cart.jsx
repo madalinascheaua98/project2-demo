@@ -4,14 +4,11 @@ import Layout from '../components/Layout';
 import { connect } from 'react-redux';
 // importam Link-ul din router
 import { Link } from 'react-router-dom';
-// importam fisierul css corespunzator
 import './Cart.css';
 // importam iconita de stergere a produsului
 import { ReactComponent as Close} from '../assets/icons/close.svg';
 import { removeFromCart } from '../redux/actions/cart';
 
-// De ce Cart nu este o clasa? State-ul este tinut in store-ul global, deci nu va mai avea state! =>
-// poate fi o functional component.
 function Cart(props) {
 
     // Am adaugat o functie care calculeaza cu reduce suma totala a produselor.
@@ -33,9 +30,9 @@ function Cart(props) {
                     ? <div className="w-100">
                         {/* Numele coloanelor ce vor fi afisate. */}
                         <div className="d-flex justify-content-between text-center h4 text-bold">
-                            <p className="w-25">Produs</p>
-                            <p className="w-25">Pret</p>
-                            <p className="w-25">Cantitate</p>
+                            <p className="w-25">Product</p>
+                            <p className="w-25">Price</p>
+                            <p className="w-25">Quantity</p>
                             <p className="w-25">Total</p>
                         </div>
                         {
@@ -60,7 +57,7 @@ function Cart(props) {
                     {/* Am adaugat o sectiune care afiseaza totalul comenzii. */}
                     <div className="d-flex justify-content-end border-top">
                             <div className="w-25 d-flex align-items-center justify-content-center">
-                                <p className="my-4 text-center font-weight-bold">Total de plată: </p>
+                                <p className="my-4 text-center font-weight-bold">Total Price: </p>
                             </div>
                             <div className="w-25">
                                 <p className="my-4 text-center">
@@ -70,8 +67,8 @@ function Cart(props) {
                         </div>
                     </div>
                     : <div className="d-flex flex-column align-items-center">
-                        <p className="h3">Nu ai produse in cart!</p>
-                        <Link to="/"><button className="btn btn-outline-dark">Inapoi la home</button></Link>
+                        <p className="h3">The basket in empty!</p>
+                        <Link to="/"><button className="btn btn-outline-dark">Back Home</button></Link>
                     </div>
                 }
             </div>
