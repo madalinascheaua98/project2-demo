@@ -4,6 +4,10 @@ import products from '../utils/products.json';
 import './Product.css';
 import { connect } from 'react-redux';
 import { addToCart } from '../redux/actions/cart';
+import { addToFavorite } from '../redux/actions/favorites';
+import { removeFromFavorite } from '../redux/actions/favorites';
+import { ReactComponent as Star } from '../assets/icons/star-full.svg';
+import { ReactComponent as StarEmpty } from '../assets/icons/star-empty.svg';
 
 class Product extends React.Component {
     constructor(props) {
@@ -30,7 +34,9 @@ class Product extends React.Component {
     }
 
     render() {
-        const { product} = this.state;
+        const { product } = this.state;
+        const { favoriteProducts} = this.props;
+        const found = favoriteProducts.find((favoriteProducts) => favoriteProducts.id === product.id);
 
         return (
             <Layout>
@@ -42,6 +48,8 @@ class Product extends React.Component {
                         </div>
                         <div className="product-details">
                             <p className="h3 text-danger">{product.price} {product.currency}</p>
+                            
+                            <div className="d-flex flex-row">
                             <button
                                 className="btn btn-dark mb-4 font-weight-bold"
                                 onClick={() => {
@@ -58,6 +66,20 @@ class Product extends React.Component {
                             >
                                 Add to basket
                             </button>
+                            {!found ?
+                                <StarEmpty onClick={() => this.props.addToFavorite({
+                                    product: {
+                                        id: product.id,
+                                        name: product.name,
+                                        price: product.price,
+                                        currency: product.currency,
+                                        image: product.image
+                                    }
+                                })}/>
+                                :  <Star onClick={() => this.props.removeFromFavorite({id: product.id})}/>
+                            }
+                            </div>
+
                             <p><span className="font-weight-bold">Author</span>: {product.author}</p>
                             <p><span className="font-weight-bold">Format</span>: {product.format}</p>
                             <p><span className="font-weight-bold">Language</span>: {product.language}</p>
@@ -71,10 +93,18 @@ class Product extends React.Component {
     }
 }
 
+function mapStateToProps(state) {
+    return {
+        favoriteProducts: state.favorite.products
+    };
+}
+
 function mapDispatchToProps(dispatch) {
     return {
-        addToCart: (payload) => dispatch(addToCart(payload))
+        addToCart: (payload) => dispatch(addToCart(payload)),
+        addToFavorite: (payload) => dispatch(addToFavorite(payload)),
+        removeFromFavorite: (payload) => dispatch(removeFromFavorite(payload))
     }
 }
 
-export default connect(null, mapDispatchToProps)(Product);
+export default connect(mapStateToProps, mapDispatchToProps)(Product);

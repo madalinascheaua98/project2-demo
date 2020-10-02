@@ -5,6 +5,7 @@ import { createStore, combineReducers, applyMiddleware } from 'redux';
 import { cartReducer } from './reducers/cart';
 // Importam si noul reducer.
 import { userReducer } from './reducers/user';
+import { favoriteReducer } from './reducers/favorites';
 // Importam redux-thunk.
 import thunk from 'redux-thunk';
 // Importam redux logger-ul.
@@ -16,7 +17,8 @@ import logger from 'redux-logger';
 // Valorile pentru chei trebuie sa fie reducerii corespunzatori, importati.
 const rootReducer = combineReducers({
     user: userReducer,
-    cart: cartReducer
+    cart: cartReducer,
+    favorite: favoriteReducer
 });
 
 // Toate middleware-urile utilizate de redux pot fi puse intr-un vector.

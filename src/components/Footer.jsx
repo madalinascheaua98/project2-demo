@@ -6,6 +6,7 @@ import { ReactComponent as GitHub } from '../assets/icons/github.svg';
 import { ReactComponent as LinkedIn } from '../assets/icons/linkedin.svg';
 import { ReactComponent as Book} from '../assets/icons/book.svg';
 import { ReactComponent as Books } from '../assets/icons/books.svg';
+
 // Importam CSS.
 import './Footer.css';
 

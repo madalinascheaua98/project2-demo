@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/images/logo.png';
 import { ReactComponent as ShoppingCart } from '../assets/icons/shopping-cart.svg';
+import { ReactComponent as Star } from '../assets/icons/star-full.svg';
 import './Header.css';
 import { connect } from 'react-redux';
 // Importam metoda signOut din folderul apis/firebase.
@@ -30,6 +31,9 @@ function Header(props) {
                             : <Link to="/login" className="h5 mb-0">Login</Link>
                         }
                         <div className="d-flex align-items-center">
+                            <Link to="/favorite" className="d-flex">
+                                <Star className="ml-2" />
+                            </Link>
                             <Link to="/cart" className="d-flex">
                                 <ShoppingCart className="ml-2"/>
                                 <p className="ml-1 mb-0">{ props.numberOfProducts }</p>

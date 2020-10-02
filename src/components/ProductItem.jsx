@@ -4,42 +4,71 @@ import './ProductItem.css';
 import { connect } from 'react-redux';
 // Trebuie sa importam actiunile pe care le vom utiliza(dispatch-ui).
 import { addToCart } from '../redux/actions/cart';
+import { addToFavorite } from '../redux/actions/favorites';
+import { removeFromFavorite } from '../redux/actions/favorites';
+import { ReactComponent as Star } from '../assets/icons/star-full.svg';
+import { ReactComponent as StarEmpty } from '../assets/icons/star-empty.svg';
 // Importam Link-ul din router.
 import { Link } from 'react-router-dom';
 
 function ProductItem(props) {
-    // Trebuie sa extragem si id-ul pentru ca in reducerul ce aduaga in cart il folosim.
-    const {name, price, currency, image, id} = props;
+    const {name, price, currency, image, id, favoriteProducts} = props;
+    const found = favoriteProducts.find((favoriteProducts) => favoriteProducts.id === id);
 
     return(
         <div className="product-item col-12 col-md-4 d-flex flex-column align-items-center mb-3">
             <Link to={`/product/${id}`}>
-                <img src={image} alt="productPhoto" className="mb-2"/>
+                <div className="text-center">
+                    <img src={image} alt="productPhoto" className="mb-2"/>
+                </div>
                 <p className="mb-1 text-center">{ name }</p>
                 <p className="text-center">{ price +" "+ currency }</p>
             </Link>
-            {/* Am adaugat un buton de adaugare in cart */}
-            <button
-                className="btn btn-outline-dark"
-                // ATENTIE! Nu uitati ca in metoda mapDispatchToProps definiti actiuni ce sunt
-                // salvate in props-uri! Deci cand le apelati efectiv, trebuie sa folositi props.<numeActiune>
-                // De asemenea, AVETI GRIJA la payload-ul pe care il pasati actiunii!!
-                // El trebuie sa coresponda ca strictura cu payload-ul folosit in actiuni si reduceri.
-                onClick={() => props.addToCart({
-                    product: {
-                        id,
-                        name,
-                        price,
-                        currency,
-                        image
-                    }
-                })}
-            >
-                Add to basket
-            </button>
+
+            <div className="d-flex flex-row">
+            {/* buton de adaugare in cart */}
+                <button
+                    className="btn btn-outline-dark"
+                    onClick={() => props.addToCart({
+                        product: {
+                            id,
+                            name,
+                            price,
+                            currency,
+                            image
+                        }
+                    })}
+                >
+                    Add to basket
+                </button> 
+
+                {!found ?
+                    <StarEmpty onClick={() => props.addToFavorite({
+                        product: {
+                            id,
+                            name,
+                            price,
+                            currency,
+                            image
+                        }
+                    })}/>
+                   :  <Star onClick={() => props.removeFromFavorite({id: id})}/>
+               }
+            </div>
+
         </div>
     );
 }
+
+
+
+
+function mapStateToProps(state) {
+    return {
+        favoriteProducts: state.favorite.products
+    };
+}
+
 
 // Functia mapDispatchToProps trimite actiuni catre store. Cum? Cand este apelata de connect, primeste automat
 // functia dispatch. Cand dispatch este APELATA primeste ca parametru un apel de actiune(din folderul actions,
@@ -53,7 +82,9 @@ function ProductItem(props) {
 // mai departe payload-ul.
 function mapDispatchToProps(dispatch) {
     return {
-        addToCart: (payload) => dispatch(addToCart(payload))
+        addToCart: (payload) => dispatch(addToCart(payload)),
+        addToFavorite: (payload) => dispatch(addToFavorite(payload)),
+        removeFromFavorite: (payload) => dispatch(removeFromFavorite(payload))
     };
 }
 
@@ -63,4 +94,4 @@ function mapDispatchToProps(dispatch) {
 // asadar putem sa pasam null in loc de vreo implementare.
 // ATENTIE! Trebuie ca cele doua metode sa fie pasate lui connect IN ORDINEA CORESPUNZATOARE(1. state; 2. dispatch),
 // dar pot fi denumire diferit, cu conditia ca si numele metodei de mai sus(cand ii e scrisa implementarea) sa fie acelasi.
-export default connect(null, mapDispatchToProps)(ProductItem);
+export default connect(mapStateToProps, mapDispatchToProps)(ProductItem);

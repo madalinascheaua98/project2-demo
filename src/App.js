@@ -8,6 +8,7 @@ import Login from './pages/Login';
 import Page404 from './pages/Page404';
 import Category from './pages/Category';
 import Cart from './pages/Cart';
+import Favorite from './pages/Favorite';
 import Product from './pages/Product';
 //import './utils/utility-classes.css';
 import './utils/util-classes.css';
@@ -25,6 +26,7 @@ function App() {
         componenta Header si pagina Login!*/}
         <Route exact path='/' component={Home}/>
         <Route path="/cart" component={Cart}/>
+        <Route path="/favorite" component={Favorite}/>
         <Route path='/about' component={About}/>
         <Route path='/blind' component={Blind}/>
         <Route path='/category/:categoryName' component={Category}/>

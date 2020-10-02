@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Layout from '../components/Layout';
 import products from '../utils/products.json'
 import ProductList from '../components/ProductList';
+import './Category.css';
 
 class Category extends Component {
     constructor(props) {
@@ -25,7 +26,9 @@ class Category extends Component {
         return (
             <Layout>
                 <div className="container-fluid container-min-max-width">
-                    <h2>{ this.state.category.name }</h2>
+                    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap" rel="stylesheet" />
+                    <h2 className="genre text-center">{ this.state.category.name }</h2>
+                    <br/>
                     <ProductList products={this.state.items} />
                 </div>
             </Layout>
