@@ -1,13 +1,16 @@
 import React from 'react'
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Layout from '../components/Layout';
+import './Blind.css';
 
 export default function Blind() {
     return (
-        <div>
-             <Header />
+            <Layout>
+                  <div>
                 <h1 className="text-center">Blind Date With a Book</h1>
-            <Footer />
-        </div>
+                <div class="text-center">
+                <p>Blind Date with a Book is a mystery book, wrapped in brown paper, tagged with clues</p>
+                </div>
+            </div>
+        </Layout>
     );
 }

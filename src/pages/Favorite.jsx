@@ -27,7 +27,7 @@ function Favorite(props) {
                             props.products.map(product => {
                                 return <div className="d-flex justify-content-between align-items-center text-center" key={product.id}>
                                     <div className="w-25 d-flex flex-column justify-content-center align-items-center">
-                                        <Link to="/product/:productId">
+                                        <Link to={`/product/${product.id}`}>
                                             <img src={product.image} alt="Produs"/>
                                         </Link>
                                         <p>{ product.name }</p>
@@ -45,6 +45,7 @@ function Favorite(props) {
                                                         image: product.image
                                                     }
                                                 })
+                                                props.removeFromFavorite({id: product.id})
                                             }}
                                         >
                                             Add to basket

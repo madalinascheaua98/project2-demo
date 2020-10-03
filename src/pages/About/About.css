@@ -1,0 +1,16 @@
+.about{
+    font-family: 'Satisfy', cursive;
+    margin-bottom: 50px;
+    font-size: 60px;
+}
+
+.desc{
+    font-family: 'Piazzolla', serif;
+    margin-top: 40px;
+}
+
+.img-book{
+    width: 340px;
+    height: auto;
+    margin-bottom: 10px;
+}

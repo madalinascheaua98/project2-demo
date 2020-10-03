@@ -1,13 +1,12 @@
 import React from 'react';
-import Layout from '../components/Layout';
+import Layout from '../../components/Layout';
 // importam HOC-ul connect
 import { connect } from 'react-redux';
 // importam Link-ul din router
 import { Link } from 'react-router-dom';
 import './Cart.css';
-// importam iconita de stergere a produsului
-import { ReactComponent as Close} from '../assets/icons/close.svg';
-import { removeFromCart } from '../redux/actions/cart';
+import { ReactComponent as Close} from '../../assets/icons/close.svg';
+import { removeFromCart } from '../../redux/actions/cart';
 
 function Cart(props) {
 
@@ -19,7 +18,6 @@ function Cart(props) {
     }
 
     return(
-        // Nu uitam de Layout, pentru a avea Header si Footer
         <Layout>
             <div className="cart-page container-fluid container-min-max-width
                 d-flex flex-column justify-content-center align-items-center">
@@ -40,7 +38,9 @@ function Cart(props) {
                             props.products.map(product => {
                                 return <div className="d-flex justify-content-between align-items-center text-center" key={product.id}>
                                     <div className="w-25 d-flex flex-column justify-content-center align-items-center">
+                                    <Link to={`/product/${product.id}`}>
                                         <img src={product.image} alt="Produs"/>
+                                    </Link>
                                         <p>{ product.name }</p>
                                     </div>
                                     <p className="w-25">{ product.price } { product.currency }</p>

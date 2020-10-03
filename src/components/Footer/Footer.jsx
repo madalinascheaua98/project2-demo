@@ -1,13 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ReactComponent as Phone } from '../assets/icons/phone.svg';
-import { ReactComponent as Mail } from '../assets/icons/mail.svg';
-import { ReactComponent as GitHub } from '../assets/icons/github.svg';
-import { ReactComponent as LinkedIn } from '../assets/icons/linkedin.svg';
-import { ReactComponent as Book} from '../assets/icons/book.svg';
-import { ReactComponent as Books } from '../assets/icons/books.svg';
-
-// Importam CSS.
+import { ReactComponent as Phone } from '../../assets/icons/phone.svg';
+import { ReactComponent as Mail } from '../../assets/icons/mail.svg';
+import { ReactComponent as GitHub } from '../../assets/icons/github.svg';
+import { ReactComponent as LinkedIn } from '../../assets/icons/linkedin.svg';
+import { ReactComponent as Book} from '../../assets/icons/book.svg';
+import { ReactComponent as Books } from '../../assets/icons/books.svg';
 import './Footer.css';
 
 function Footer() {

@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../assets/images/logo.png';
-import { ReactComponent as ShoppingCart } from '../assets/icons/shopping-cart.svg';
-import { ReactComponent as Star } from '../assets/icons/star-full.svg';
+import Logo from '../../assets/images/logo.png';
+import { ReactComponent as ShoppingCart } from '../../assets/icons/shopping-cart.svg';
+import { ReactComponent as Star } from '../../assets/icons/star-full.svg';
 import './Header.css';
 import { connect } from 'react-redux';
 // Importam metoda signOut din folderul apis/firebase.
-import { logoutUser } from '../redux/actions/user';
+import { logoutUser } from '../../redux/actions/user';
 
 function Header(props) {
     // Am eliminat din Header props-urile ce veneau din Layout!

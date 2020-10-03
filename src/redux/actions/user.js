@@ -59,10 +59,6 @@ export function loginUserFacebook() {
 }
 
 
-
-
-
-
 // Functia logoutUser este similara ca structura cu loginUser, doar ca atunci cand actualizeaza datele userului,
 // in loc sa adauge date noi despre el, va goli datele precedente(updateUserData primeste un obiect gol).
 export function logoutUser() {

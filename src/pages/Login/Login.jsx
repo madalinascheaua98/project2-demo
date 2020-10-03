@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from '../assets/images/logo.png';
-import { ReactComponent as Google } from '../assets/icons/google.svg';
-import { ReactComponent as Facebook } from '../assets/icons/facebook.svg';
+import Logo from '../../assets/images/logo.png';
+import { ReactComponent as Google } from '../../assets/icons/google.svg';
+import { ReactComponent as Facebook } from '../../assets/icons/facebook.svg';
 import './Login.css';
 import { connect } from 'react-redux';
 // Importam actiunea loginUser, care se va ocupa le loginul userului(request asincron)
-import { loginUserGoogle, loginUserFacebook } from '../redux/actions/user';
+import { loginUserGoogle, loginUserFacebook } from '../../redux/actions/user';
 
 
 class Login extends React.Component {

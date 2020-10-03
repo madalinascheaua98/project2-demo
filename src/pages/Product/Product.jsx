@@ -1,13 +1,13 @@
 import React from 'react';
-import Layout from '../components/Layout';
-import products from '../utils/products.json';
+import Layout from '../../components/Layout';
+import products from '../../utils/products.json';
 import './Product.css';
 import { connect } from 'react-redux';
-import { addToCart } from '../redux/actions/cart';
-import { addToFavorite } from '../redux/actions/favorites';
-import { removeFromFavorite } from '../redux/actions/favorites';
-import { ReactComponent as Star } from '../assets/icons/star-full.svg';
-import { ReactComponent as StarEmpty } from '../assets/icons/star-empty.svg';
+import { addToCart } from '../../redux/actions/cart';
+import { addToFavorite } from '../../redux/actions/favorites';
+import { removeFromFavorite } from '../../redux/actions/favorites';
+import { ReactComponent as Star } from '../../assets/icons/star-full.svg';
+import { ReactComponent as StarEmpty } from '../../assets/icons/star-empty.svg';
 
 class Product extends React.Component {
     constructor(props) {

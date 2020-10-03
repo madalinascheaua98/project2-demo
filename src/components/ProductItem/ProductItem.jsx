@@ -3,11 +3,11 @@ import './ProductItem.css';
 // Pentru a conecta componenta la store importam HOC-ul connect
 import { connect } from 'react-redux';
 // Trebuie sa importam actiunile pe care le vom utiliza(dispatch-ui).
-import { addToCart } from '../redux/actions/cart';
-import { addToFavorite } from '../redux/actions/favorites';
-import { removeFromFavorite } from '../redux/actions/favorites';
-import { ReactComponent as Star } from '../assets/icons/star-full.svg';
-import { ReactComponent as StarEmpty } from '../assets/icons/star-empty.svg';
+import { addToCart } from '../../redux/actions/cart';
+import { addToFavorite } from '../../redux/actions/favorites';
+import { removeFromFavorite } from '../../redux/actions/favorites';
+import { ReactComponent as Star } from '../../assets/icons/star-full.svg';
+import { ReactComponent as StarEmpty } from '../../assets/icons/star-empty.svg';
 // Importam Link-ul din router.
 import { Link } from 'react-router-dom';
 

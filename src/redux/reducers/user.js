@@ -1,4 +1,4 @@
-// Avem nevoie de un initial state
+
 const initialState = {
     data: null,
     loading: false,
