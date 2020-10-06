@@ -15,7 +15,6 @@ function Favorite(props) {
                 {
                     props.products.length
                     ? <div className="w-100">
-                        {/* Numele coloanelor ce vor fi afisate. */}
                         <div className="d-flex justify-content-between text-center h4 text-bold">
                             <p className="w-25">Product</p>
                             <p className="w-25">Price</p>
@@ -23,7 +22,6 @@ function Favorite(props) {
                             <p className="w-25">Remove</p>
                         </div>
                         {
-                            // Afisam produsele din cart.
                             props.products.map(product => {
                                 return <div className="d-flex justify-content-between align-items-center text-center" key={product.id}>
                                     <div className="w-25 d-flex flex-column justify-content-center align-items-center">

@@ -5,13 +5,10 @@ import { ReactComponent as ShoppingCart } from '../../assets/icons/shopping-cart
 import { ReactComponent as Star } from '../../assets/icons/star-full.svg';
 import './Header.css';
 import { connect } from 'react-redux';
-// Importam metoda signOut din folderul apis/firebase.
+// Import metoda signOut din folderul apis/firebase.
 import { logoutUser } from '../../redux/actions/user';
 
 function Header(props) {
-    // Am eliminat din Header props-urile ce veneau din Layout!
-    // Acum signOut-ul este injectat in props prin metoda mapDispatchToProps si va lansa actiunea
-    // logoutUser(importata si ea).
     return(
         <header className="border-bottom mb-3">
             <div className="container-fluid container-min-max-width d-flex justify-content-between align-items-center">
@@ -19,7 +16,7 @@ function Header(props) {
                     <img src={Logo} alt="Mad Shop" className="logo"/>
                 </Link>
                 <div>
-                    {/* Atentie! Userul este preluat din store, deci il vom referi ca props.user. */}
+                    {/* userul este preluat din store => referit ca props.user. */}
                     { props.user
                         ? <p>Hello, {props.user.displayName}!</p>
                         : null
@@ -46,19 +43,18 @@ function Header(props) {
     );
 }
 
-// Am adaugat la mapStateToProps un nou camp: user. Aici se gasesc datele necesare despre user.
+// campulul user: aici se gasesc datele necesare despre user
 function mapStateToProps(state) {
     return {
         numberOfProducts: state.cart.products.length,
         user: state.user.data
     }
 }
-// Avem nevoie de actiunea logoutUser, importata din redux/actions, care va face logarea efectiva a userului.
+// actiunea logoutUser, importata din redux/actions, care va face logarea efectiva a userului
 function mapDispatchToProps(dispatch) {
     return {
         signOut: () => dispatch(logoutUser())
     }
 }
 
-// Am adaugat functia mapDispatchToProps.
 export default connect(mapStateToProps, mapDispatchToProps)(Header);

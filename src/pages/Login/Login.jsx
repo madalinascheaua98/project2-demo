@@ -5,15 +5,12 @@ import { ReactComponent as Google } from '../../assets/icons/google.svg';
 import { ReactComponent as Facebook } from '../../assets/icons/facebook.svg';
 import './Login.css';
 import { connect } from 'react-redux';
-// Importam actiunea loginUser, care se va ocupa le loginul userului(request asincron)
+// Import actiunea loginUser, care se va ocupa le loginul userului(request asincron)
 import { loginUserGoogle, loginUserFacebook } from '../../redux/actions/user';
 
 
 class Login extends React.Component {
 
-    // Foarte important! Am facut login o class component pentru a putea avea acces la componentDidUpdate.
-    // De ce? Daca s-au schimbat datele despre user, fiind in pagina de login, asta inseamna ca un user nou
-    // s-a logat cu succes. Ce e de facut in acest caz? Trebuie sa redirectam catre Home!
     componentDidUpdate(prevProps) {
         if (this.props.user !== prevProps.user) {
             this.props.history.push('/');
@@ -54,19 +51,11 @@ class Login extends React.Component {
 
 const mapStateToProps = (state) => {
     return {
-        // ATENTIE FOARTE MARE CE LUATI DIN STORE! Daca ati fi luat ca valoare pentru user doar
-        // state.user.data, atunci de fiecare data cand se modifica valoarea lui user, store-ul
-        // nu se actualiza!! Tineti minte mecanismul de comunicare a componentelor cu store-ul:
-        // cand store-ul se actualizeaza, se verifica componentele care sunt conectate la store si
-        // iau prin mapStateToProps FIX campurile care sunt actualizate in store. In cazul de fata
-        // se modifica valoarea lui state.user.data.user, iar pentru store este diferit de
-        // state.user.data, intrucat el verifica modficarile SHALLOW intamplate(pe primul nivel).
         user: state.user.data
     }
 }
 
-// Vom vrea la click pe buton sa apelam functia de signin cu Google, adica sa dispatch-uim actiunea
-// loginUser catre store.
+
 const mapDispatchToProps = (dispatch) => {
     return {
         signInWithGoogle: () => dispatch(loginUserGoogle()),
@@ -74,5 +63,5 @@ const mapDispatchToProps = (dispatch) => {
     }
 }
 
-// conectam Loginul la store
+// conect Loginul la store
 export default connect(mapStateToProps, mapDispatchToProps)(Login);

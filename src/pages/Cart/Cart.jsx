@@ -10,7 +10,7 @@ import { removeFromCart } from '../../redux/actions/cart';
 
 function Cart(props) {
 
-    // Am adaugat o functie care calculeaza cu reduce suma totala a produselor.
+    // functie care calculeaza cu reduce suma totala a produselor.
     const totalSum = (products) => {
         return products.reduce((acc, product) => {
             return acc + product.quantity * product.price;
@@ -22,11 +22,8 @@ function Cart(props) {
             <div className="cart-page container-fluid container-min-max-width
                 d-flex flex-column justify-content-center align-items-center">
                 {
-                    // Daca avem produse in cart, le afisam.
-                    // PRODUSELE sunt venite din store si salvate in props prin functia mapStateToProps!!
                     props.products.length
                     ? <div className="w-100">
-                        {/* Numele coloanelor ce vor fi afisate. */}
                         <div className="d-flex justify-content-between text-center h4 text-bold">
                             <p className="w-25">Product</p>
                             <p className="w-25">Price</p>
@@ -34,7 +31,6 @@ function Cart(props) {
                             <p className="w-25">Total</p>
                         </div>
                         {
-                            // Afisam produsele din cart.
                             props.products.map(product => {
                                 return <div className="d-flex justify-content-between align-items-center text-center" key={product.id}>
                                     <div className="w-25 d-flex flex-column justify-content-center align-items-center">
@@ -54,7 +50,7 @@ function Cart(props) {
                                 </div>
                             })
                         }
-                    {/* Am adaugat o sectiune care afiseaza totalul comenzii. */}
+                    {/* sectiune care afiseaza totalul comenzii. */}
                     <div className="d-flex justify-content-end border-top">
                             <div className="w-25 d-flex align-items-center justify-content-center">
                                 <p className="my-4 text-center font-weight-bold">Total Price: </p>

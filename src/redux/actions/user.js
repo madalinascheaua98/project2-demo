@@ -1,4 +1,4 @@
-// Importam cele doua metode din firebase.
+// Import metode din firebase.
 import { signInWithGoogle, signInWithFacebook, signOut } from '../../apis/firebase/firebase';
 
 // ATENTIE! Aceste 3 actiuni normale sunt dispatch-uite(trimise) catre store din interiorul actiunilor
